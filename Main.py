@@ -62,11 +62,12 @@ class HillmeadFarmApp(App):
             
             # Main button
             btn = Button(
-                text=f'{icon}\n{label_text}',
-                font_size='14sp',
-                background_color=(0.6, 0.5, 0.7, 1),
-                size_hint=(1, 1)
-            )
+            text=f'{icon}\n{label_text}',
+            font_size='14sp',
+            font_name='C:/Windows/Fonts/seguiemj.ttf',
+            background_color=(0.6, 0.5, 0.7, 1),
+            size_hint=(1, 1)
+        )
             
             # Bind click event
             btn.bind(on_press=lambda x, text=label_text: self.on_button_click(text))
